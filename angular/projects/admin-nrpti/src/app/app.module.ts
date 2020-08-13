@@ -73,7 +73,7 @@ export function overlayScrollFactory(overlay: Overlay): () => CloseScrollStrateg
     SidebarComponent,
     FooterComponent,
     NotAuthorizedComponent,
-    ImportTableRowsComponent
+    ImportTableRowsComponent,
   ],
   imports: [
     BrowserModule,
@@ -124,7 +124,7 @@ export function overlayScrollFactory(overlay: Overlay): () => CloseScrollStrateg
     CanDeactivateGuard,
     RecordUtils
   ],
-  entryComponents: [ConfirmComponent, HomeComponent, ImportComponent, ImportTableRowsComponent],
+  entryComponents: [ConfirmComponent, HomeComponent, ImportComponent, ImportTableRowsComponent,],
   bootstrap: [AppComponent]
 })
 export class AppModule {
