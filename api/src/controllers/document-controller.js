@@ -481,7 +481,7 @@ exports.protectedGetS3SignedURL = async function(args, res, next) {
     defaultLog.warn('protectedGet - missing required docId param');
     return queryActions.sendResponse(res, 400, 'Missing required docId param');
   }
-
+console.log(args.swagger.params)
   const Document = mongoose.model('Document');
   const document = await Document.findOne({ _id: new ObjectID(args.swagger.params.docId.value), write: { $in: args.swagger.params.auth_payload.realm_access.roles } });
 
